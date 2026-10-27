@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Belajar Coding Bareng Rezki">
+  <rect width="64" height="64" rx="16" fill="#172B4D"/>
+  <path d="M23 19h11.2c7.1 0 11.8 3.9 11.8 10.1 0 4.5-2.4 7.7-6.4 9.2L47 46H38l-6.3-7.2H30V46h-7V19Zm7 6v8h3.8c3 0 4.8-1.5 4.8-4.1 0-2.5-1.8-3.9-4.8-3.9H30Z" fill="#C6F36B"/>
+  <circle cx="49" cy="17" r="4" fill="#FAF9F6"/>
+</svg>

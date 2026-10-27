@@ -1,0 +1,952 @@
+# PRODUCT REQUIREMENTS DOCUMENT (PRD)
+## Belajar Coding Bareng Rezki
+
+**Versi:** 1.0  
+**Status:** Ready for Implementation  
+**Produk:** Personal Teaching Portfolio & Coding Tutoring Landing Page  
+**Pemilik:** Rezki Suryana  
+**Platform:** Website responsif  
+**Deployment target:** Vercel, dengan verifikasi kesesuaian paket hosting terhadap penggunaan komersial  
+**Bahasa utama:** Bahasa Indonesia
+
+---
+
+# 1. Product Overview
+
+## 1.1 Latar Belakang
+
+Rezki Suryana merupakan guru IT coding sekaligus web developer dengan pengalaman lebih dari 8 tahun di bidang pengembangan web.
+
+Saat ini, calon murid atau orang tua yang menemukan layanan melalui Threads membutuhkan satu tempat untuk:
+- Mengenal pengajar dan latar belakangnya.
+- Melihat dokumentasi pengalaman mengajar.
+- Melihat contoh proyek dan materi pembelajaran.
+- Memahami pilihan kelas yang tersedia.
+- Mengetahui harga, durasi, dan metode belajar.
+- Menghubungi pengajar untuk konsultasi serta pendaftaran.
+
+Website ini dibuat sebagai platform personal branding pendidikan sekaligus landing page konversi untuk layanan les coding online.
+
+Website harus memberikan kesan profesional, hangat, terpercaya, modern, dan mudah dipahami oleh orang tua maupun siswa.
+
+## 1.2 Product Vision
+
+Menjadi website personal pengajar coding yang menghubungkan pengalaman profesional di dunia teknologi dengan pembelajaran coding berbasis praktik untuk anak dan remaja.
+
+Prinsip utama produk:
+
+**Learn by Building. Build with Confidence.**
+
+Anak belajar memahami teknologi dengan mencoba, bereksperimen, dan membangun proyek secara bertahap.
+
+## 1.3 Tujuan Bisnis
+
+1. Mendapatkan calon murid dari Threads, WhatsApp, dan media sosial lainnya.
+2. Meningkatkan kepercayaan orang tua terhadap kompetensi dan pengalaman mengajar Rezki.
+3. Mempermudah calon murid memahami kelas, materi, dan harga sebelum menghubungi pengajar.
+4. Menampilkan dokumentasi pengajaran dan proyek coding sebagai bukti kompetensi.
+5. Membangun aset digital jangka panjang untuk layanan les coding personal.
+
+## 1.4 Tujuan Pengguna
+
+Orang tua diharapkan dapat:
+- Memahami layanan dalam waktu singkat.
+- Menemukan kelas yang sesuai dengan usia dan kemampuan anak.
+- Melihat bukti pengalaman mengajar.
+- Memahami biaya dan proses pendaftaran.
+- Menghubungi pengajar tanpa harus membuat akun.
+
+## 1.5 Non-Goals
+
+Versi pertama tidak mencakup:
+- LMS atau portal siswa.
+- Login dan autentikasi.
+- Dashboard admin khusus.
+- Sistem pembayaran otomatis.
+- Penjadwalan otomatis.
+- Video conference internal.
+- Sistem ujian dan penilaian online.
+- Forum komunitas.
+- Marketplace tutor.
+- Sertifikat otomatis.
+
+Semua pendaftaran ditangani melalui WhatsApp agar website dapat segera diluncurkan tanpa kompleksitas backend.
+
+---
+
+# 2. Target Audience
+
+## 2.1 Primary Audience: Orang Tua
+
+Orang tua siswa SD/SMP yang:
+- Ingin anaknya mengenal coding.
+- Mencari kegiatan belajar yang produktif.
+- Memiliki anak yang menyukai game atau teknologi.
+- Membutuhkan tutor yang dapat membimbing secara langsung.
+- Ingin memahami biaya, materi, dan jadwal sebelum mendaftar.
+
+Pain points:
+- Tidak tahu harus mulai belajar coding dari mana.
+- Khawatir coding terlalu sulit untuk anak.
+- Sulit membedakan kelas yang benar-benar praktik dan yang hanya teori.
+- Ingin mengetahui kredibilitas pengajar.
+- Membutuhkan informasi harga yang jelas.
+
+## 2.2 Secondary Audience: Siswa
+
+Siswa SD/SMP yang:
+- Tertarik membuat game sendiri.
+- Ingin belajar Scratch.
+- Ingin membuat website.
+- Sudah memiliki dasar coding dan ingin mengembangkan proyek.
+
+## 2.3 Tertiary Audience
+
+- Orang tua yang ingin les privat.
+- Siswa yang membutuhkan pendampingan proyek.
+- Calon mitra pendidikan.
+- Sekolah atau komunitas yang membutuhkan instruktur coding.
+
+---
+
+# 3. Brand Identity
+
+## 3.1 Brand Name
+
+**Belajar Coding Bareng Rezki**
+
+Nama ini menekankan hubungan personal antara pengajar dan siswa, mudah dipahami, serta fleksibel untuk berbagai materi coding.
+
+## 3.2 Brand Personality
+
+- Friendly
+- Trustworthy
+- Modern
+- Educational
+- Practical
+- Professional
+- Encouraging
+
+## 3.3 Brand Message
+
+Belajar coding tidak harus dimulai dengan materi yang rumit. Anak dapat mulai dari proyek sederhana, memahami logikanya, lalu mengembangkan kemampuan secara bertahap.
+
+## 3.4 Tone of Voice
+
+Gunakan bahasa Indonesia yang:
+- Ramah dan tidak kaku.
+- Mudah dipahami orang tua.
+- Tidak terlalu teknis.
+- Tidak berlebihan dalam menjanjikan hasil.
+- Mengutamakan manfaat nyata bagi proses belajar anak.
+
+Hindari klaim seperti:
+- Anak pasti menjadi programmer setelah beberapa sesi.
+- Dijamin jago coding dalam satu pertemuan.
+- Metode paling bagus di Indonesia.
+- Jumlah murid atau testimoni yang belum benar-benar ada.
+
+---
+
+# 4. Design System
+
+## 4.1 Design Direction
+
+Desain harus terlihat seperti perpaduan website edukasi modern dan personal portfolio premium.
+
+Gunakan pendekatan:
+- Minimalist editorial layout.
+- Spacious whitespace.
+- Strong typography hierarchy.
+- Rounded cards secukupnya.
+- Subtle motion.
+- Authentic project imagery.
+- Clear conversion-focused layout.
+
+Jangan membuat website terlihat seperti template sekolah formal atau situs kursus anak yang penuh warna-warni.
+
+## 4.2 Color Palette
+
+Gunakan warna yang konsisten dan nyaman dibaca.
+
+| Token | Warna | Penggunaan |
+|---|---|---|
+| Primary | Deep Navy `#172B4D` | Heading, navigasi, elemen utama |
+| Accent | Fresh Lime `#C6F36B` | CTA utama dan aksen |
+| Background | Warm Ivory `#FAF9F6` | Latar halaman |
+| Surface | White `#FFFFFF` | Card dan panel |
+| Text Primary | `#202733` | Teks utama |
+| Text Secondary | `#687386` | Deskripsi dan metadata |
+| Border | `#E7E8E4` | Garis pemisah |
+| Success | `#287D57` | Status berhasil |
+
+Aturan:
+- Lime digunakan sebagai aksen, bukan warna latar seluruh halaman.
+- Pastikan kontras teks memadai.
+- Jangan menggunakan banyak gradien.
+- Hindari terlalu banyak bayangan dan dekorasi.
+
+## 4.3 Typography
+
+Gunakan font modern yang mendukung Bahasa Indonesia.
+
+Rekomendasi:
+- Heading: Plus Jakarta Sans.
+- Body: Inter.
+
+Alternatif: gunakan satu keluarga font saja untuk menjaga konsistensi.
+
+Ukuran desktop:
+- Hero heading: 52–64 px.
+- Section heading: 34–44 px.
+- Card title: 20–24 px.
+- Body: 16–18 px.
+- Caption: 13–14 px.
+
+Ukuran mobile:
+- Hero heading: 34–42 px.
+- Section heading: 28–34 px.
+- Body: 15–17 px.
+
+Gunakan line-height yang nyaman dan hindari paragraf panjang.
+
+## 4.4 Layout
+
+Desktop:
+- Max content width sekitar 1120–1200 px.
+- Grid 12 kolom jika diperlukan.
+- Section spacing 80–112 px.
+- Card radius 16–24 px.
+- Navbar dengan tinggi sekitar 72–80 px.
+
+Mobile:
+- Padding horizontal 20–24 px.
+- Section spacing 48–72 px.
+- Card disusun vertikal.
+- CTA utama mudah ditemukan.
+- Hindari horizontal overflow.
+
+## 4.5 Motion & Interaction
+
+Gunakan animasi sederhana:
+- Fade-in ringan ketika elemen memasuki viewport.
+- Hover state pada tombol dan kartu.
+- Transisi 150–250 ms.
+- FAQ accordion dengan animasi ringan.
+
+Hindari:
+- Animasi berlebihan.
+- Parallax berat.
+- Efek 3D yang mengganggu.
+- Animasi yang menghambat aksesibilitas.
+
+Hormati preferensi `prefers-reduced-motion`.
+
+---
+
+# 5. Information Architecture
+
+Versi pertama berupa single-page landing page dengan anchor navigation.
+
+Navbar:
+- Beranda
+- Tentang
+- Kelas
+- Dokumentasi
+- FAQ
+- Tombol CTA: Konsultasi
+
+Struktur halaman:
+
+1. Header / Navbar
+2. Hero
+3. Trust Indicators
+4. Featured Learning Projects
+5. Tentang Pengajar
+6. Pilihan Kelas
+7. Cara Belajar
+8. Teaching Documentation
+9. Harga Kelas Perkenalan
+10. FAQ
+11. Final CTA
+12. Footer
+
+Anchor URL:
+- `/#kelas`
+- `/#tentang`
+- `/#dokumentasi`
+- `/#faq`
+- `/#daftar`
+
+Tidak perlu membuat banyak route pada MVP. Jika dokumentasi berkembang, halaman detail proyek dapat ditambahkan kemudian.
+
+---
+
+# 6. Detailed Page Requirements
+
+## 6.1 Header / Navbar
+
+Tujuan:
+Memberikan navigasi yang jelas dan akses cepat ke informasi kelas.
+
+Komponen:
+- Logo teks: Belajar Coding Bareng Rezki.
+- Navigation links.
+- CTA “Tanya Jadwal”.
+
+Perilaku:
+- Sticky navbar opsional.
+- Smooth scrolling untuk anchor.
+- Mobile navigation menggunakan menu yang dapat dibuka dan ditutup.
+- CTA mengarah ke WhatsApp.
+
+Acceptance criteria:
+- Navbar berfungsi pada desktop dan mobile.
+- Tidak menutupi judul section ketika menggunakan anchor.
+- Menu mobile dapat dibuka, ditutup, dan digunakan dengan keyboard.
+
+## 6.2 Hero Section
+
+Tujuan:
+Menjelaskan layanan dalam 5–10 detik pertama.
+
+Copy utama:
+
+Eyebrow:
+KELAS CODING ONLINE UNTUK ANAK SD/SMP
+
+Headline:
+**Bukan cuma main game. Yuk, belajar bikin game dan website sendiri!**
+
+Description:
+Belajar coding dari dasar melalui proyek yang menarik, dengan pendampingan langsung dari Rezki, guru IT coding sekaligus web developer.
+
+Primary CTA:
+Lihat Pilihan Kelas
+
+Secondary CTA:
+Konsultasi via WhatsApp
+
+Supporting text:
+Mulai dari pemula • Belajar online • Materi bertahap
+
+Visual:
+- Screenshot atau video demo proyek coding.
+- Pilih proyek Rocket vs Alien sebagai contoh game Scratch jika dokumentasinya siap.
+- Gunakan screenshot asli atau visual ilustratif yang tidak mengaku sebagai karya siswa.
+- Hindari stock photography berlebihan.
+
+Acceptance criteria:
+- Pengunjung langsung mengetahui layanan, sasaran, dan cara menghubungi pengajar.
+- CTA terlihat tanpa perlu scroll terlalu jauh.
+- Hero tetap menarik pada layar mobile.
+
+## 6.3 Trust Indicators
+
+Tujuan:
+Membangun kepercayaan dengan informasi yang relevan.
+
+Konten yang dapat ditampilkan:
+- Pengalaman web development 8+ tahun.
+- Pengalaman mengajar IT coding.
+- Pendekatan pembelajaran berbasis proyek.
+- Materi dari coding visual hingga web development.
+
+Penting:
+Jangan menampilkan angka jumlah siswa, tingkat keberhasilan, atau rating jika belum memiliki data yang dapat diverifikasi.
+
+## 6.4 Featured Learning Projects
+
+Tujuan:
+Memperlihatkan bahwa pembelajaran menghasilkan aktivitas dan proyek konkret.
+
+Tampilkan 2–3 kartu proyek.
+
+Contoh:
+
+### Project 1 — Rocket vs Alien
+Kategori: Scratch / Game Development.
+
+Deskripsi:
+Mengenal pergerakan karakter, interaksi, dan logika permainan melalui proyek game sederhana.
+
+Materi:
+- Sprite movement.
+- Event dan input.
+- Collision atau interaksi karakter jika sudah diterapkan.
+- Logika peluru dan aksi menembak sesuai progres proyek.
+
+CTA:
+Lihat Dokumentasi
+
+Status proyek harus dijelaskan dengan akurat. Jika masih dalam pengerjaan, tampilkan sebagai proyek pembelajaran yang sedang dikembangkan, bukan proyek final.
+
+### Project 2 — Sprite Control
+Kategori: Scratch / Input Interaction.
+
+Deskripsi:
+Mempelajari cara mengendalikan sprite menggunakan keyboard dan mouse.
+
+### Project 3 — Beginner Website
+Kategori: Web Development.
+
+Deskripsi:
+Mengenal struktur halaman, styling, dan dasar interaksi web menggunakan HTML, CSS, dan JavaScript.
+
+Gunakan proyek yang benar-benar tersedia.
+
+Setiap kartu sebaiknya memiliki:
+- Thumbnail.
+- Judul.
+- Kategori.
+- Ringkasan.
+- Konsep yang dipelajari.
+- Tautan demo atau dokumentasi jika tersedia.
+
+## 6.5 About the Instructor
+
+Judul:
+**Belajar teknologi bersama praktisi yang juga mengajar.**
+
+Copy:
+Halo, saya Rezki.
+
+Saya adalah guru IT coding sekaligus web developer dengan pengalaman lebih dari 8 tahun di bidang pengembangan web.
+
+Di kelas, saya berusaha membantu siswa memahami coding melalui praktik, eksperimen, dan proyek yang sesuai dengan kemampuan mereka.
+
+Saya ingin siswa tidak hanya menggunakan teknologi, tetapi mulai memahami cara kerjanya dan belajar membangun sesuatu dengan ide mereka sendiri.
+
+Konten tambahan:
+- Foto pengajar yang autentik.
+- Pengalaman mengajar yang relevan.
+- Pengalaman profesional.
+- Link ke portofolio developer utama.
+
+CTA:
+Kenali Profil Saya
+
+Acceptance criteria:
+- Profil terasa personal, kredibel, dan tidak berlebihan.
+- Terdapat tautan kembali ke website portofolio profesional.
+
+## 6.6 Class Programs
+
+Tampilkan tiga pilihan jalur belajar.
+
+### A. Scratch & Game Development
+
+Target:
+Pemula, terutama siswa yang tertarik pada game.
+
+Materi:
+- Dasar logika pemrograman.
+- Event dan sequence.
+- Sprite movement.
+- Condition dan loop sesuai kesiapan siswa.
+- Membuat game sederhana.
+
+Format:
+Online dengan pendampingan langsung.
+
+### B. Web Development
+
+Target:
+Siswa yang ingin belajar membuat website.
+
+Materi:
+- HTML untuk struktur.
+- CSS untuk tampilan.
+- JavaScript untuk interaksi.
+- Praktik membuat halaman web sederhana.
+
+Prasyarat:
+Disesuaikan dengan usia dan kemampuan siswa.
+
+### C. Coding Lanjutan
+
+Target:
+Siswa yang telah memiliki dasar coding.
+
+Materi:
+Disesuaikan berdasarkan pengetahuan awal, tujuan, dan proyek yang ingin dikembangkan.
+
+Penting:
+Jangan mencantumkan harga tetap untuk kelas lanjutan sebelum durasi, kurikulum, dan formatnya ditentukan.
+
+CTA setiap program:
+Diskusikan Kelas
+
+Semua CTA membuka WhatsApp dengan minat kelas yang sudah tercantum di pesan awal.
+
+## 6.7 Learning Approach
+
+Judul:
+**Belajar dengan mencoba, bukan hanya menonton.**
+
+Tampilkan tiga langkah.
+
+1. **Kenali konsepnya.** Siswa mempelajari konsep sesuai tingkat kemampuannya.
+2. **Praktik langsung.** Siswa mencoba dan membangun proyek dengan arahan pengajar.
+3. **Evaluasi dan kembangkan.** Siswa memperbaiki hasil, memahami kesalahan, dan mempelajari langkah berikutnya.
+
+Jangan menjanjikan hasil yang sama bagi setiap siswa. Tekankan bahwa kemajuan disesuaikan dengan kemampuan awal dan proses belajar.
+
+## 6.8 Teaching Documentation
+
+Tujuan:
+Menampilkan bukti nyata pengalaman mengajar.
+
+Kategori dokumentasi:
+- Aktivitas mengajar.
+- Materi pembelajaran.
+- Proyek coding.
+- Catatan capaian dan evaluasi pembelajaran.
+
+Setiap dokumentasi dapat berisi:
+- Judul.
+- Tanggal atau periode bila relevan.
+- Materi.
+- Tujuan pembelajaran.
+- Aktivitas.
+- Capaian yang benar-benar teramati.
+- Refleksi atau tindak lanjut.
+- Foto atau screenshot yang diizinkan.
+
+MVP:
+Gunakan 3–6 item dokumentasi terbaik yang memang tersedia.
+
+Jika belum memiliki izin untuk menampilkan foto siswa, gunakan screenshot materi, kode, slide, dan proyek tanpa identitas siswa.
+
+Jangan membuat testimoni atau dokumentasi fiktif.
+
+## 6.9 Pricing Section
+
+Judul:
+**Mulai dari satu sesi perkenalan.**
+
+Card utama:
+
+Nama:
+Kelas Perkenalan Coding
+
+Harga:
+Rp49.000
+
+Durasi:
+60 menit
+
+Format:
+Online via Google Meet
+
+Cocok untuk:
+Anak SD/SMP pemula yang ingin mencoba belajar coding.
+
+Yang didapat:
+- Pengenalan konsep coding.
+- Praktik langsung menggunakan Scratch.
+- Pendampingan selama sesi.
+- Rekomendasi langkah belajar berikutnya.
+
+CTA:
+Tanya Jadwal dan Daftar
+
+Catatan:
+Harga ini merupakan penawaran perkenalan yang ditetapkan pengajar. Tampilkan hanya jika harga dan jadwal benar-benar tersedia.
+
+Jangan menambahkan badge “Paling laris”, diskon palsu, atau countdown.
+
+Paket lanjutan dapat ditambahkan setelah kurikulum dan harga final ditetapkan.
+
+## 6.10 FAQ
+
+Pertanyaan yang harus tersedia:
+
+1. Apakah anak harus bisa coding terlebih dahulu?
+2. Anak kelas berapa yang bisa mengikuti kelas?
+3. Apakah kelas dilakukan secara online?
+4. Perangkat apa yang perlu disiapkan?
+5. Apakah bisa belajar membuat website?
+6. Bagaimana jika anak sudah memiliki dasar coding?
+7. Bagaimana cara memilih materi yang sesuai?
+8. Bagaimana cara mendaftar dan menentukan jadwal?
+
+Jawaban harus singkat, jelas, dan tidak memberikan janji berlebihan.
+
+## 6.11 Final CTA
+
+Headline:
+**Punya anak yang tertarik belajar coding? Yuk, mulai dari proyek sederhana.**
+
+Description:
+Ceritakan usia, pengalaman coding, dan minat anak. Kita diskusikan kelas yang sesuai sebelum menentukan jadwal.
+
+CTA:
+Konsultasi via WhatsApp
+
+Secondary link:
+Lihat Dokumentasi Pembelajaran
+
+## 6.12 Footer
+
+Konten:
+- Belajar Coding Bareng Rezki.
+- Deskripsi singkat.
+- Navigasi.
+- Link ke portofolio developer.
+- Threads atau media sosial yang relevan.
+- Copyright dinamis.
+- Informasi kontak.
+
+Jangan mencantumkan alamat fisik atau informasi pribadi yang tidak diperlukan.
+
+---
+
+# 7. WhatsApp Conversion Flow
+
+## 7.1 CTA Behavior
+
+Setiap CTA WhatsApp harus membawa konteks sumbernya.
+
+Contoh pesan otomatis:
+
+Halo Kak Rezki, saya tertarik dengan kelas coding untuk anak.
+
+Nama/usia atau kelas anak: ...
+Pengalaman coding: ...
+Kelas yang diminati: Scratch / Web Development / Coding Lanjutan.
+Jadwal yang diinginkan: ...
+
+Boleh minta informasi lebih lanjut?
+
+## 7.2 Implementation
+
+Gunakan tautan WhatsApp dengan format:
+
+`https://wa.me/WHATSAPP_NUMBER?text=ENCODED_MESSAGE`
+
+Ketentuan:
+- Ganti `WHATSAPP_NUMBER` dengan nomor internasional aktif tanpa tanda plus, spasi, atau tanda hubung.
+- Encode pesan menggunakan `encodeURIComponent`.
+- Jangan memasukkan data pribadi siswa ke URL selain teks yang diperlukan.
+- Uji link di desktop dan mobile.
+- Buka di tab atau aplikasi yang sesuai.
+
+## 7.3 Tracking
+
+Untuk MVP, catat event sederhana:
+- `cta_hero_click`
+- `cta_class_click`
+- `cta_pricing_click`
+- `cta_footer_click`
+- `project_detail_click`
+
+Gunakan analitik yang sesuai dengan kebutuhan dan kebijakan privasi. Jika analitik belum dibutuhkan, mulai dengan UTM pada tautan kampanye dan pencatatan sumber calon murid secara manual.
+
+Klik WhatsApp bukan berarti pendaftaran berhasil. Konversi harus dihitung berdasarkan percakapan dan pendaftaran aktual.
+
+---
+
+# 8. Technical Requirements
+
+## 8.1 Recommended Stack
+
+- Next.js dengan App Router.
+- TypeScript.
+- Tailwind CSS.
+- Komponen UI yang ringan dan konsisten.
+- Lucide icons.
+- Static content untuk profil, kelas, proyek, dan FAQ.
+- Deployment melalui Vercel setelah memastikan ketentuan hosting sesuai.
+
+Gunakan versi dependency yang stabil dan kompatibel saat implementasi.
+
+## 8.2 Suggested Folder Structure
+
+```text
+app/
+  layout.tsx
+  page.tsx
+  globals.css
+  robots.ts
+  sitemap.ts
+  opengraph-image.tsx
+
+components/
+  layout/
+    navbar.tsx
+    footer.tsx
+  sections/
+    hero.tsx
+    trust-indicators.tsx
+    featured-projects.tsx
+    about-instructor.tsx
+    class-programs.tsx
+    learning-approach.tsx
+    teaching-documentation.tsx
+    pricing.tsx
+    faq.tsx
+    final-cta.tsx
+  ui/
+    button.tsx
+    section-heading.tsx
+    project-card.tsx
+    documentation-card.tsx
+    pricing-card.tsx
+    faq-item.tsx
+    whatsapp-link.tsx
+
+content/
+  site.ts
+  classes.ts
+  projects.ts
+  documentation.ts
+  faq.ts
+
+public/
+  images/
+    instructor/
+    projects/
+    teaching/
+  videos/
+
+lib/
+  whatsapp.ts
+  metadata.ts
+
+types/
+  content.ts
+```
+
+Folder boleh disesuaikan dengan pola proyek yang dipilih, tetapi komponen harus modular dan mudah dipelihara.
+
+## 8.3 Content Management
+
+Untuk MVP, data konten disimpan sebagai objek atau array statis.
+
+Contoh tipe proyek:
+
+```ts
+type Project = {
+  slug: string;
+  title: string;
+  category: string;
+  description: string;
+  learningPoints: string[];
+  thumbnail: string;
+  status: "in-progress" | "completed";
+  demoUrl?: string;
+};
+```
+
+Contoh tipe dokumentasi:
+
+```ts
+type TeachingDocumentation = {
+  slug: string;
+  title: string;
+  date?: string;
+  topic: string;
+  objectives: string[];
+  activities: string[];
+  reflection?: string;
+  image?: string;
+  visibility: "public";
+};
+```
+
+Jangan menyimpan data pribadi siswa dalam dataset publik.
+
+## 8.4 Performance
+
+Persyaratan:
+- Gunakan `next/image` untuk gambar.
+- Tentukan dimensi atau aspect ratio gambar.
+- Gunakan format gambar modern jika tersedia.
+- Hindari autoplay video bersuara.
+- Jangan memuat semua video berat sekaligus.
+- Lazy-load media di bawah fold.
+- Hindari library animasi besar jika CSS sudah cukup.
+
+Target kualitas:
+- Lighthouse Performance minimal 90 pada pengujian representatif.
+- Accessibility minimal 90.
+- Best Practices minimal 90.
+- SEO minimal 90.
+
+Nilai Lighthouse merupakan target pengembangan, bukan jaminan hasil di setiap perangkat atau jaringan.
+
+## 8.5 SEO
+
+Title:
+Belajar Coding Online Anak SD/SMP | Rezki
+
+Meta description:
+Les coding online untuk anak SD/SMP. Belajar Scratch, membuat game sederhana, dan mengenal web development bersama Rezki.
+
+Persyaratan:
+- Metadata unik.
+- Open Graph image.
+- Canonical URL setelah domain final tersedia.
+- `robots.txt`.
+- `sitemap.xml`.
+- Semantic HTML.
+- Heading hierarchy yang benar.
+- Alt text yang deskriptif.
+- Link ke portofolio utama.
+- Tidak menggunakan schema review atau rating tanpa data yang valid.
+
+## 8.6 Accessibility
+
+- Semua kontrol dapat digunakan melalui keyboard.
+- Fokus terlihat dengan jelas.
+- Kontras warna memadai.
+- Gambar memiliki alt text yang sesuai.
+- Form atau kontrol memiliki label.
+- FAQ accordion mendukung keyboard dan pembaca layar.
+- Animasi menghormati reduced motion.
+- CTA tidak hanya dibedakan melalui warna.
+
+## 8.7 Privacy and Security
+
+- Jangan menampilkan data identitas siswa tanpa izin yang sesuai.
+- Jangan mempublikasikan foto atau video siswa tanpa persetujuan wali yang diperlukan.
+- Hindari nama lengkap, nomor kontak, akun, atau informasi sensitif siswa.
+- Jangan memasang formulir yang mengumpulkan data anak jika tidak diperlukan.
+- Gunakan tautan eksternal secara aman.
+- Jangan memasukkan API key atau secret ke source code frontend.
+- Sertakan penjelasan privasi yang sesuai jika analitik atau pengumpulan data digunakan.
+
+---
+
+# 9. Responsive Design Requirements
+
+## Desktop
+
+- Navbar horizontal.
+- Hero dengan teks dan visual dalam dua kolom.
+- Kartu proyek dalam grid 3 kolom bila ruang cukup.
+- Section tentang pengajar dengan foto dan teks berdampingan.
+- Pricing card dengan penekanan yang jelas.
+- Whitespace luas dan keterbacaan tinggi.
+
+## Tablet
+
+- Hero menggunakan grid yang lebih rapat.
+- Kartu proyek menjadi 2 kolom.
+- Navbar disesuaikan jika tidak muat.
+- Ukuran heading dan spacing dikurangi secara proporsional.
+
+## Mobile
+
+- Hero satu kolom.
+- CTA utama mudah dijangkau.
+- Kartu proyek satu kolom atau carousel yang tetap dapat digunakan dengan keyboard.
+- Pricing card memenuhi lebar konten.
+- FAQ dapat dibuka dengan mudah.
+- WhatsApp CTA terlihat jelas tanpa menutupi konten.
+- Tidak ada horizontal overflow.
+
+Jika menggunakan floating WhatsApp button, pastikan tidak menutupi CTA, footer, atau informasi penting.
+
+---
+
+# 10. Acceptance Criteria
+
+Website dinyatakan siap diluncurkan jika:
+
+1. Semua section utama telah tersedia dan urutannya masuk akal.
+2. Identitas pengajar dan target kelas dapat dipahami dalam beberapa detik.
+3. Informasi harga, durasi, dan format kelas akurat.
+4. Tombol WhatsApp bekerja dengan nomor dan pesan yang benar.
+5. Semua tautan navigasi bekerja.
+6. Dokumentasi yang ditampilkan benar dan diizinkan untuk dipublikasikan.
+7. Website responsif pada mobile, tablet, dan desktop.
+8. Tidak ada error console yang kritis.
+9. Build produksi berhasil.
+10. Metadata dan Open Graph tersedia.
+11. Gambar dan video dioptimalkan.
+12. Tidak ada placeholder yang belum diganti pada konten publik.
+13. Pengujian keyboard dan kontras dasar selesai.
+14. Ketentuan paket hosting telah diperiksa untuk penggunaan yang direncanakan.
+
+---
+
+# 11. Development Backlog
+
+## Phase 1 — MVP
+
+Prioritas tertinggi:
+- Setup Next.js, TypeScript, dan Tailwind.
+- Implementasi design system.
+- Navbar dan hero.
+- Featured projects.
+- About instructor.
+- Class programs.
+- Teaching documentation.
+- Pricing.
+- FAQ.
+- WhatsApp CTA.
+- Footer.
+- Responsive layout.
+- SEO metadata.
+- Deployment dan QA.
+
+## Phase 2 — Improvement
+
+Dikerjakan setelah website mulai digunakan:
+- Halaman detail proyek.
+- Halaman detail dokumentasi.
+- Artikel belajar coding.
+- Kategori materi.
+- Analitik konversi yang lebih terstruktur.
+- Testimoni autentik dengan izin.
+- Landing page khusus kampanye Scratch atau web development.
+
+## Phase 3 — Optional
+
+Jika kebutuhan bisnis sudah berkembang:
+- CMS untuk mengelola dokumentasi.
+- Form konsultasi.
+- Integrasi kalender.
+- Sistem booking.
+- Pembayaran online.
+- Portal siswa.
+
+Jangan implementasikan Phase 2 dan 3 sebelum MVP menghasilkan manfaat yang jelas.
+
+---
+
+# 12. Launch Strategy
+
+Sebelum launch, siapkan:
+- Foto pengajar.
+- Screenshot proyek Scratch.
+- Minimal satu demo proyek.
+- Dua atau tiga dokumentasi pembelajaran yang autentik.
+- Nomor WhatsApp yang aktif.
+- Harga dan jadwal kelas yang tersedia.
+- Tautan portofolio developer utama.
+
+Setelah launch:
+1. Pasang tautan di bio Threads.
+2. Gunakan website sebagai tujuan bagi orang tua yang meminta detail.
+3. Publikasikan konten edukasi dan demo proyek secara konsisten.
+4. Catat jumlah pesan masuk dan pendaftaran aktual.
+5. Perbaiki bagian yang menimbulkan pertanyaan berulang.
+
+---
+
+# 13. Definition of Done
+
+MVP dianggap selesai apabila pengunjung dapat:
+
+- Memahami siapa Rezki.
+- Melihat contoh proyek coding.
+- Mengetahui materi yang tersedia.
+- Memahami harga dan format kelas perkenalan.
+- Membaca dokumentasi pengajaran.
+- Mendapatkan jawaban atas pertanyaan umum.
+- Menghubungi pengajar melalui WhatsApp.
+
+**Prinsip akhir:** Website harus membuat calon orang tua merasa yakin untuk memulai percakapan, bukan membuat mereka membaca terlalu banyak sebelum menemukan cara mendaftar.
