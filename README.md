@@ -75,9 +75,11 @@ pnpm start      # jalankan hasil build
 Situs produksi berjalan di Vercel:
 
 - URL: [https://learnwithrezki.vercel.app](https://learnwithrezki.vercel.app)
+- Repository: [github.com/rezkisuryana/learnwithrezki](https://github.com/rezkisuryana/learnwithrezki)
 - Project: `learnwithrezki`
 - Scope: `rezkisuryanaoramicoms-projects`
 - Domain lama `belajar-coding-bareng-rezki.vercel.app` dialihkan permanen ke domain baru.
+- Push ke branch `main` memicu deployment produksi otomatis.
 
 Deploy ulang dari direktori proyek:
 
