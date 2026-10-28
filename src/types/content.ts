@@ -1,6 +1,6 @@
 export type ProjectStatus = "concept" | "in-progress" | "completed";
 
-export type ProjectVisual = "rocket" | "sprite" | "website";
+export type ProjectVisual = "rocket" | "sprite" | "website" | "portfolio";
 
 export type Project = {
   slug: string;

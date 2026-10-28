@@ -20,7 +20,6 @@ export const projects: Project[] = [
     status: "concept",
     statusLabel: "Konsep materi",
     visual: "rocket",
-    featured: true,
   },
   {
     slug: "mengendalikan-sprite",
@@ -51,5 +50,20 @@ export const projects: Project[] = [
     status: "concept",
     statusLabel: "Materi dasar",
     visual: "website",
+  },
+  {
+    slug: "website-portfolio",
+    title: "Website Portfolio",
+    category: "Web Development · Proyek Kreatif",
+    description:
+      "Membangun halaman web profil pribadi untuk memamerkan karya dan proyek coding yang sudah dibuat.",
+    learningPoints: [
+      "Merancang tata letak halaman profil",
+      "Menampilkan galeri karya dan kontak",
+      "Mempublikasikan website secara online",
+    ],
+    status: "concept",
+    statusLabel: "Materi lanjutan",
+    visual: "portfolio",
   },
 ];

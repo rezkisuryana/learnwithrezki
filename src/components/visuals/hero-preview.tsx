@@ -1,20 +1,5 @@
 import Image from "next/image";
 
-import { AlienArt, RocketArt } from "@/components/visuals/space-art";
-
-const stars = [
-  { left: "12%", top: "24%", size: 3, delay: "0s" },
-  { left: "24%", top: "70%", size: 2, delay: "0.4s" },
-  { left: "38%", top: "38%", size: 2, delay: "0.9s" },
-  { left: "52%", top: "18%", size: 3, delay: "0.2s" },
-  { left: "64%", top: "62%", size: 2, delay: "1.2s" },
-  { left: "78%", top: "30%", size: 2, delay: "0.6s" },
-  { left: "88%", top: "70%", size: 3, delay: "1.4s" },
-  { left: "18%", top: "48%", size: 1.5, delay: "0.7s" },
-  { left: "70%", top: "80%", size: 1.5, delay: "1.1s" },
-  { left: "44%", top: "84%", size: 2, delay: "0.3s" },
-];
-
 export function HeroPreview() {
   return (
     <figure className="hero-visual">
@@ -36,41 +21,16 @@ export function HeroPreview() {
           <div
             className="game-stage"
             role="img"
-            aria-label="Ilustrasi panggung game Scratch berisi roket dan alien di angkasa."
+            aria-label="Tangkapan layar game Scratch: Rocket vs Alien di angkasa"
           >
-            <div className="game-stage__hud" aria-hidden="true">
-              <span>
-                <i className="live-dot" />
-                Stage
-              </span>
-              <span>Skor 000</span>
-            </div>
-
-            <div className="game-stage__stars" aria-hidden="true">
-              {stars.map((star, index) => (
-                <i
-                  key={index}
-                  style={{
-                    left: star.left,
-                    top: star.top,
-                    width: star.size,
-                    height: star.size,
-                    animationDelay: star.delay,
-                  }}
-                />
-              ))}
-            </div>
-
-            <div className="game-stage__orbit" aria-hidden="true" />
-            <RocketArt className="game-stage__rocket" />
-            <AlienArt className="game-stage__alien game-stage__alien--one" />
-            <AlienArt className="game-stage__alien game-stage__alien--two" />
-            <span className="game-stage__laser" aria-hidden="true" />
-
-            <div className="game-stage__meta" aria-hidden="true">
-              <p>Rocket vs Alien</p>
-              <span>Level 01 · Gerak &amp; interaksi</span>
-            </div>
+            <Image
+              src="/images/scratch-project.png"
+              alt="Ilustrasi proyek game Scratch Rocket vs Alien"
+              fill
+              priority
+              sizes="(min-width: 1024px) 400px, (min-width: 640px) 50vw, 100vw"
+              className="game-stage__image"
+            />
           </div>
 
           <div className="code-rail" aria-hidden="true">

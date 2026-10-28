@@ -8,8 +8,6 @@ import { contactMessages } from "@/content/contact-messages";
 import { projects } from "@/content/projects";
 
 export function FeaturedProjects() {
-  const [featured, ...rest] = projects;
-
   return (
     <section
       id="proyek"
@@ -26,18 +24,11 @@ export function FeaturedProjects() {
         />
 
         <div className="projects-grid">
-          <ProjectCard
-            project={featured}
-            index={0}
-            className="projects-grid__featured"
-          />
-          {rest.map((project, index) => (
+          {projects.map((project, index) => (
             <ProjectCard
               key={project.slug}
               project={project}
-              index={index + 1}
-              compact
-              className="projects-grid__side"
+              index={index}
             />
           ))}
         </div>
